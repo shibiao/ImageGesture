@@ -15,6 +15,8 @@
 		730FF6B51EE948D600E8B108 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 730FF6B31EE948D600E8B108 /* LaunchScreen.storyboard */; };
 		730FF6C01EE948D600E8B108 /* ImageGestureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 730FF6BF1EE948D600E8B108 /* ImageGestureTests.m */; };
 		730FF6CB1EE948D600E8B108 /* ImageGestureUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 730FF6CA1EE948D600E8B108 /* ImageGestureUITests.m */; };
+		730FF6DB1EE9490F00E8B108 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 730FF6D91EE9490F00E8B108 /* ImageViewController.m */; };
+		730FF6DC1EE9490F00E8B108 /* ImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 730FF6DA1EE9490F00E8B108 /* ImageViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		730FF6C61EE948D600E8B108 /* ImageGestureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageGestureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		730FF6CA1EE948D600E8B108 /* ImageGestureUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageGestureUITests.m; sourceTree = "<group>"; };
 		730FF6CC1EE948D600E8B108 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		730FF6D81EE9490F00E8B108 /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
+		730FF6D91EE9490F00E8B108 /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
+		730FF6DA1EE9490F00E8B108 /* ImageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +110,9 @@
 				730FF6A91EE948D600E8B108 /* AppDelegate.m */,
 				730FF6AB1EE948D600E8B108 /* ViewController.h */,
 				730FF6AC1EE948D600E8B108 /* ViewController.m */,
+				730FF6D81EE9490F00E8B108 /* ImageViewController.h */,
+				730FF6D91EE9490F00E8B108 /* ImageViewController.m */,
+				730FF6DA1EE9490F00E8B108 /* ImageViewController.xib */,
 				730FF6AE1EE948D600E8B108 /* Main.storyboard */,
 				730FF6B11EE948D600E8B108 /* Assets.xcassets */,
 				730FF6B31EE948D600E8B108 /* LaunchScreen.storyboard */,
@@ -207,7 +215,7 @@
 				TargetAttributes = {
 					730FF6A11EE948D600E8B108 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = Z823693P7K;
+						DevelopmentTeam = W547SRU75H;
 						ProvisioningStyle = Automatic;
 					};
 					730FF6BA1EE948D600E8B108 = {
@@ -251,6 +259,7 @@
 			files = (
 				730FF6B51EE948D600E8B108 /* LaunchScreen.storyboard in Resources */,
 				730FF6B21EE948D600E8B108 /* Assets.xcassets in Resources */,
+				730FF6DC1EE9490F00E8B108 /* ImageViewController.xib in Resources */,
 				730FF6B01EE948D600E8B108 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,6 +287,7 @@
 			files = (
 				730FF6AD1EE948D600E8B108 /* ViewController.m in Sources */,
 				730FF6AA1EE948D600E8B108 /* AppDelegate.m in Sources */,
+				730FF6DB1EE9490F00E8B108 /* ImageViewController.m in Sources */,
 				730FF6A71EE948D600E8B108 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,8 +437,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = Z823693P7K;
+				DEVELOPMENT_TEAM = W547SRU75H;
 				INFOPLIST_FILE = ImageGesture/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.saiyikeji.ImageGesture;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -439,8 +450,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = Z823693P7K;
+				DEVELOPMENT_TEAM = W547SRU75H;
 				INFOPLIST_FILE = ImageGesture/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.saiyikeji.ImageGesture;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -516,6 +528,7 @@
 				730FF6D11EE948D600E8B108 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		730FF6D21EE948D600E8B108 /* Build configuration list for PBXNativeTarget "ImageGestureTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +537,7 @@
 				730FF6D41EE948D600E8B108 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		730FF6D51EE948D600E8B108 /* Build configuration list for PBXNativeTarget "ImageGestureUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +546,7 @@
 				730FF6D71EE948D600E8B108 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
